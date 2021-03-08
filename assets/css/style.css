@@ -1,0 +1,108 @@
+/* .scrolling-active {
+    background-color: rgb(105, 105, 105);
+    
+} */
+* {
+    /* font-family: manrope-regular !important; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,
+html,
+section {
+    max-width: 100% !important;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+nav.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color: black !important;
+}
+header.sticky .navbar {
+    background: black ;
+    padding: 0.4em 0.2em ;
+    box-shadow: 0 3px 1rem rgb(114, 110, 110);
+}
+header.sticky .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color: rgb(204, 204, 204) !important;
+}
+header.sticky .navbar .navbar-brand .navbar-item .fs-2{
+    color: rgb(255, 255, 255);
+}
+header.sticky .navbar .navbar-brand .navbar-item .fs-6{
+    color: rgb(52, 55, 224) !important;
+}
+.jumbroton {
+    background-image: url(bgLandingPage.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+.jumbroton .container-fluid {
+    padding-top: 35vh;
+}
+
+.jumbroton .btn {
+    border: none;
+    border-radius: 25px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+.jumbroton .btn:hover{
+    background-color: rgb(62, 211, 25);
+    color: black;
+}
+/* .sc-login {    
+    max-height: 100vh !important;
+} */
+.loginImage img {
+    margin-top: 10em !important;
+    max-width: 25em;
+}
+.formLogin {
+    margin-top: 17em !important;
+}
+.registerImage img {
+    margin-top: 10em !important;
+    max-width: 25em;
+}
+.formRegister {
+    margin-top: 10em !important;
+}
+.sideBar {
+    background-color: rgb(76, 138, 61);
+    /* position: absolute; */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: left; */
+    
+}
+.sideBar .text-white a {
+    color: white;
+    text-decoration: none;
+}
+.sideBar .text-white a:hover {
+    color: rgb(210, 245, 10);
+    text-decoration: none;
+}
+.sideBar .text-white a.active {
+    /* border-color: yellow !important; */
+    color: rgb(230, 255, 91);
+    text-decoration: none;
+}
+.sideBar .logout {
+    margin-top: 40vh !important;
+}
+.mainBar {
+    margin-left: 17vw !important;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: left; */
+     */
+}

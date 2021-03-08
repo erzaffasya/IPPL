@@ -1,0 +1,73 @@
+<%- include('../../components/link') %>
+<section>
+    <div class="">
+        <div class="col-2 p-5 position-fixed sideBar">
+            <h1 class="text-warning">Kasidi</h1>
+            <div class="mt-5 beranda text-white">
+                <a class="active" href="/homes">
+                    <i class="fa-2x fas fa-home"></i>
+                    <span class="ms-2">Beranda</span>
+                </a>
+            </div>
+            <div class="mt-4 fitur text-white">
+                <a href="/fitures">
+                    <i class="fa-2x fas fa-list-ul"></i>
+                    <span class="ms-2">Fitur</span>
+                </a>
+            </div>
+            <div class="mt-4 transaksi text-white">
+                <a href="/transaksis">
+                    <i class="fa-2x fas fa-hand-holding-usd"></i>
+                    <span class="ms-2">Transaksi</span>
+                </a>
+            </div>
+            <div class="mt-4 riwayat text-white">
+                <a href="/riwayats">
+                    <i class="fa-2x fas fa-history"></i>
+                    <span class="ms-2">Riwayat</span>
+                </a>
+            </div>
+            <div class="mt-4 logout text-white">
+                <a href="/logouts">
+                    <i class="fa-2x fas fa-history"></i>
+                    <span class="ms-2">Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="container mt-2 col-10 position-fixed mainBar">
+            <% datas2.forEach( function(user){ %>
+                <nav class="navbar navbar-light bg-light rounded-pill">
+                        <div class="container-fluid">
+                            <a class="navbar-brand d-flex align-items-center" href="/profiles">
+                                <i class="fa-2x fas fa-user-circle"></i>
+                                <span class="fw-bolder ms-3"><%= user.name %></span>
+                            </a>
+                            <!-- <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form> -->
+                        </div>
+                </nav>
+                <div class="container mt-5 sc-home">
+                    <div class="hello">
+                        <h4 class="text-success">Hello, <span class="text-dark"><%= user.name %></span></h4>
+                        <hr>
+                    </div>
+                    <div class="d-flex align-items-center saldo">
+                        <div class="saldoValue">
+                            <h6 class="fw-bold">Sisa Saldo</h6>
+                            <h2>Rp 25.000</h2>
+                        </div>
+                        <div class="ms-auto addSaldo">
+                            <a class="btn btn-success" href="#" role="button">
+                                <i class="fas fa-plus"></i>
+                                Isi Saldo
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+              <% }) %> 
+        </div>
+    </div>
+</section>

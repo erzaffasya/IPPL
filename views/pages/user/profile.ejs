@@ -1,0 +1,71 @@
+<%- include('../../components/link' )%>
+<section>
+    <div class="">
+        <div class="col-2 p-5 position-fixed sideBar">
+            <h1 class="text-warning">Kasidi</h1>
+            <div class="mt-5 beranda text-white">
+                <a href="/homes">
+                    <i class="fa-2x fas fa-home"></i>
+                    <span class="ms-2">Beranda</span>
+                </a>
+            </div>
+            <div class="mt-4 fitur text-white">
+                <a href="/fitures">
+                    <i class="fa-2x fas fa-list-ul"></i>
+                    <span class="ms-2">Fitur</span>
+                </a>
+            </div>
+            <div class="mt-4 transaksi text-white">
+                <a href="/transaksis">
+                    <i class="fa-2x fas fa-hand-holding-usd"></i>
+                    <span class="ms-2">Transaksi</span>
+                </a>
+            </div>
+            <div class="mt-4 riwayat text-white">
+                <a href="/riwayats">
+                    <i class="fa-2x fas fa-history"></i>
+                    <span class="ms-2">Riwayat</span>
+                </a>
+            </div>
+            <div class="mt-4 logout text-white">
+                <a href="/logouts">
+                    <i class="fa-2x fas fa-history"></i>
+                    <span class="ms-2">Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="container col-10 position-fixed mainBar">
+            <% datas.forEach( function(user){ %>
+               <div class="row">
+                   <div class="col-auto m-5">
+                        <img class="rounded picprofile" src="profile.jpg" alt="">
+                   </div>
+                   <div class="col mt-5 ms-2">
+                        <div class="nama">
+                            <label class="fw-bold" for="">Nama</label>
+                            <p><%= user.name %></p>
+                        </div>
+                        <div class="nim">
+                            <label class="fw-bold" for="">NIM</label>
+                            <p><%= user.nim %></p>
+                        </div>
+                        <div class="email">
+                            <label class="fw-bold" for="">Email</label>
+                            <p><%= user.email %></p>
+                        </div>
+                        <div class="prodi">
+                            <label class="fw-bold" for="">Prodi</label>
+                            <p><%= user.prodi %></p>
+                        </div>
+                        <div class="text-center" >
+                            <a href="/editProfiles">
+                                <button type="submit" class="btn btn-warning  align-item-bottom">Edit Data</button>
+                            </a>
+                        </div>
+                   </div>
+               </div>
+               
+            <% }) %> 
+        </div>
+    </div>
+</section>
